@@ -207,19 +207,24 @@
     </section>
 
     <!-- Contact -->
-    <section id="contacto" class="contact">
-      <h2>Contacto</h2>
-      <p style="color:var(--muted);margin-top:6px">¿Tienes un proyecto? Escríbeme.</p>
-      <form action="#" method="post" onsubmit="alert('Formulario simulado — en un sitio real enviarías estos datos a un servidor.');return false;">
-        <input type="text" name="nombre" placeholder="Nombre" required />
-        <input type="email" name="email" placeholder="Correo" required />
-        <textarea name="mensaje" placeholder="Mensaje" required></textarea>
-        <div style="display:flex;gap:10px;align-items:center">
-          <button type="submit" class="btn">Enviar mensaje</button>
-          <div style="color:var(--muted);font-size:0.9rem">O escríbeme a: <a href="mailto:tu@correo.com">Ocampolopezla@gmail.com</a></div>
-        </div>
-      </form>
-    </section>
+   <section id="contacto" class="contact">
+  <h2>Contacto</h2>
+  <p style="color:var(--muted);margin-top:6px">¿Tienes un proyecto? Escríbeme.</p>
+
+  <form action="mailto:ocampolopezla@gmail.com" method="POST" enctype="text/plain">
+    <input type="text" name="nombre" placeholder="Nombre" required />
+    <input type="email" name="email" placeholder="Correo" required />
+    <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+
+    <div style="display:flex;gap:10px;align-items:center">
+      <button type="submit" class="btn">Enviar mensaje</button>
+      <div style="color:var(--muted);font-size:0.9rem">
+        O escríbeme a: <a href="mailto:ocampolopezla@gmail.com">ocampolopezla@gmail.com</a>
+      </div>
+    </div>
+  </form>
+</section>
+
 
     <footer>
       <div>&copy; <span id="year"></span> Luis Andres. Todos los derechos reservados.</div>
